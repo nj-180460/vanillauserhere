@@ -1,15 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+      <div className="intro-me">
         <p>
-          Ok
+          Hi, I'm Neil John Selencio, an aspiring Java developer.
+          I develop JavaFX desktop app, and Swing desktop app.
+          I'm currently studying Spring Boot. 
+          Looking forward to working with you!
         </p>
-      </header>
+      </div>
     </div>
   );
 }
