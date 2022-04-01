@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/vanillauserhere/static/css/main.7575033a.css",
+    "main.css": "/vanillauserhere/static/css/main.7c9c1887.css",
     "main.js": "/vanillauserhere/static/js/main.808461c6.js",
     "index.html": "/vanillauserhere/index.html",
-    "main.7575033a.css.map": "/vanillauserhere/static/css/main.7575033a.css.map",
+    "main.7c9c1887.css.map": "/vanillauserhere/static/css/main.7c9c1887.css.map",
     "main.808461c6.js.map": "/vanillauserhere/static/js/main.808461c6.js.map"
   },
   "entrypoints": [
-    "static/css/main.7575033a.css",
+    "static/css/main.7c9c1887.css",
     "static/js/main.808461c6.js"
   ]
 }
