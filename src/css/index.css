@@ -1,0 +1,448 @@
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Tahoma', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 100;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body a {
+  text-decoration: none;
+}
+
+body li {
+  list-style: none;
+}
+
+body .App {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: rgba(26, 26, 26, 0.9);
+  padding: 50px 150px 50px 150px;
+}
+
+@media (max-width: 850px) {
+  body .App {
+    padding: calc(5px + 1vmin);
+  }
+}
+
+body .App .HomeLandingPage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-image: url(../img/bluesh8.svg);
+  background-size: cover;
+}
+
+body .App .HomeLandingPage .HomeNavigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  background-color: rgba(9, 83, 133, 0.667);
+  padding: 0px 100px 0px 100px;
+}
+
+@media (max-width: 850px) {
+  body .App .HomeLandingPage .HomeNavigation {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+body .App .HomeLandingPage .HomeNavigation .nav-title {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  -ms-flex-preferred-size: 0;
+      flex-basis: 0;
+  text-align: left;
+  color: rgba(255, 153, 0, 0.8);
+  font-size: calc(8px + 2vmin);
+  padding: 20px 0px;
+  font-weight: bold;
+}
+
+@media (max-width: 850px) {
+  body .App .HomeLandingPage .HomeNavigation .nav-title {
+    text-align: center;
+    padding: 10px 0px;
+  }
+}
+
+body .App .HomeLandingPage .HomeNavigation .navig {
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+@media (max-width: 850px) {
+  body .App .HomeLandingPage .HomeNavigation .navig {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+body .App .HomeLandingPage .HomeNavigation .navig * {
+  text-align: center;
+  color: #FFFE;
+  font-size: calc(8px + 2vmin);
+  padding: 20px 10px;
+}
+
+@media (max-width: 850px) {
+  body .App .HomeLandingPage .HomeNavigation .navig * {
+    padding: 10px 0px;
+  }
+}
+
+body .App .HomeLandingPage .HomeNavigation .navig *:hover {
+  -webkit-transition-delay: 100ms;
+          transition-delay: 100ms;
+  background-color: #3a7eac;
+  color: rgba(255, 153, 0, 0.8);
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+body .App .HomeLandingPage .HomeNavigation .Hamburger {
+  margin: 20px 0px;
+  display: none;
+  font-size: calc(8px + 2vmin);
+  color: #FFFE;
+}
+
+@media (max-width: 850px) {
+  body .App .HomeLandingPage .HomeNavigation .Hamburger {
+    display: block;
+    margin: 10px 0px;
+  }
+}
+
+body .App .HomeLandingPage .HomeNavigation .Hamburger #toggle {
+  display: none;
+}
+
+body .App .HomeLandingPage .HomeNavigation .Hamburger .hamburger {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .App .HomeLandingPage .HomeNavigation .Hamburger .hamburger div {
+  width: 2em;
+  height: 5px;
+  border-radius: 3px;
+  background-color: rgba(255, 153, 0, 0.8);
+  margin-top: 3px;
+  -webkit-transition: all 0.02s ease-in-out;
+  transition: all 0.02s ease-in-out;
+}
+
+body .App .HomeLandingPage .HomeNavigation .Hamburger #toggle:checked + .hamburger .top-bun {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  margin-top: 10px;
+}
+
+body .App .HomeLandingPage .HomeNavigation .Hamburger #toggle:checked + .hamburger .bottom-bun {
+  opacity: 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+body .App .HomeLandingPage .HomeNavigation .Hamburger #toggle:checked + .hamburger .meat {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  margin-top: -5px;
+}
+
+body .App .HomeLandingPage .HomeNavigation .Hamburger #toggle:checked + .hamburger + .nav {
+  top: 0;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+body .App .HomeLandingPage .HomeNavigation .Hamburger :hover {
+  cursor: pointer;
+}
+
+body .App .HomeLandingPage .IntroMe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+  margin: 50px 0px;
+  padding: 0px 100px 0px 100px;
+}
+
+@media (max-width: 850px) {
+  body .App .HomeLandingPage .IntroMe {
+    padding: 0px 40px 0px 40px;
+  }
+}
+
+body .App .HomeLandingPage .IntroMe .intro-me {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  font-size: calc(8px + 2vmin);
+  color: #FFFE;
+  margin-bottom: 50px;
+}
+
+body .App .HomeLandingPage .IntroMe .java-typing-animation {
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: rgba(27, 27, 27, 0.85);
+  border: 3px solid rgba(27, 27, 27, 0.85);
+  padding: 10px;
+}
+
+body .App .HomeLandingPage .IntroMe .java-typing-animation .nav-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 10px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  border-bottom: 2px solid #FFF8;
+  margin-bottom: 10px;
+}
+
+body .App .HomeLandingPage .IntroMe .java-typing-animation .nav-button button {
+  margin: 0px 0px 5px 0px;
+  padding: calc(2px + 0vmin) calc(2px + 1vmin);
+  font-size: calc(8px + 1vmin);
+  color: #FFFE;
+  border-radius: 4px;
+}
+
+body .App .HomeLandingPage .IntroMe .java-typing-animation .nav-button .btn-run {
+  background-color: rgba(0, 197, 82, 0.712);
+}
+
+body .App .HomeLandingPage .IntroMe .java-typing-animation .nav-button .btn-clear {
+  background-color: #ee3326;
+}
+
+body .App .HomeLandingPage .IntroMe .java-typing-animation .nav-button .btn-run:hover, body .App .HomeLandingPage .IntroMe .java-typing-animation .nav-button .btn-clear:hover {
+  background-color: #3a7eac;
+  color: rgba(255, 153, 0, 0.8);
+}
+
+body .App .HomeLandingPage .IntroMe .java-typing-animation #type-writer {
+  margin: 0px;
+  padding: 0px;
+}
+
+body .App .HomeLandingPage .IntroMe .java-typing-animation #type-writer p {
+  margin: 0px;
+  color: #FFFE;
+  font-size: calc(3px + 2vmin);
+}
+
+body .App .HomeLandingPage .IntroMe .java-typing-animation .terminal-input {
+  margin: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #FFFE;
+  font-size: calc(3px + 2vmin);
+}
+
+body .App .HomeLandingPage .IntroMe .java-typing-animation .terminal-input input {
+  margin-left: 10px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  color: #FFFE;
+  font-size: calc(3px + 2vmin);
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  outline: none;
+}
+
+body .App .HomeLandingPage .HomeCenterContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  padding: 0px 100px 0px 100px;
+}
+
+@media (max-width: 850px) {
+  body .App .HomeLandingPage .HomeCenterContainer {
+    padding: 0px 40px 0px 40px;
+  }
+}
+
+body .App .HomeLandingPage .HomeCenterContainer h3 {
+  font-size: calc(10px + 2vmin);
+  color: #FFFE;
+  font-weight: lighter;
+}
+
+body .App .HomeLandingPage .HomeCenterContainer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .App .HomeLandingPage .HomeCenterContainer .container .contact-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body .App .HomeLandingPage .HomeCenterContainer .container .contact-list .ContactInfo {
+  padding: 0px;
+  margin: 0px;
+  font-size: calc(10px + 2vmin);
+  color: #FFFE;
+}
+
+body .App .HomeLandingPage .HomeCenterContainer .container .contact-list .ContactInfo a {
+  font-size: calc(3px + 2vmin);
+  color: white;
+}
+
+body .App .HomeLandingPage .HomeCenterContainer .container .contact-list .ContactInfo :hover {
+  -webkit-transition-delay: 100ms;
+          transition-delay: 100ms;
+  color: rgba(255, 153, 0, 0.8);
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+body .App .HomeLandingPage .HomeCenterContainer .container .about-me-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  justify-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body .App .HomeLandingPage .HomeCenterContainer .container .about-me-info p {
+  display: inline;
+  font-size: calc(2px + 2vmin);
+  color: #FFFE;
+}
+
+body .App .HomeLandingPage .HomeCenterContainer .about-me-cont {
+  margin-top: calc(50px + 2vmin);
+  margin-bottom: calc(50px + 2vmin);
+}
+
+body .App .HomeLandingPage .HomeFooter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: rgba(9, 83, 133, 0.667);
+}
+
+body .App .HomeLandingPage .HomeFooter p {
+  padding: 0px;
+  margin: 5px 0px 5px 0px;
+  font-size: calc(1px + 2vmin);
+  color: #FFFE;
+}
+/*# sourceMappingURL=index.css.map */
