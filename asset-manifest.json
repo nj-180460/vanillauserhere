@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/vanillauserhere/static/css/main.23cdb64e.css",
+    "main.css": "/vanillauserhere/static/css/main.37c26f72.css",
     "main.js": "/vanillauserhere/static/js/main.5ba70bac.js",
     "static/media/bluesh8.svg": "/vanillauserhere/static/media/bluesh8.a6b8dd797d880bf45f38.svg",
     "index.html": "/vanillauserhere/index.html",
-    "main.23cdb64e.css.map": "/vanillauserhere/static/css/main.23cdb64e.css.map",
+    "main.37c26f72.css.map": "/vanillauserhere/static/css/main.37c26f72.css.map",
     "main.5ba70bac.js.map": "/vanillauserhere/static/js/main.5ba70bac.js.map"
   },
   "entrypoints": [
-    "static/css/main.23cdb64e.css",
+    "static/css/main.37c26f72.css",
     "static/js/main.5ba70bac.js"
   ]
 }
